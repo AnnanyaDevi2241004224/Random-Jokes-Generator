@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    /* background: url('https://coreldrawdesign.com/resources/previews/preview-happy-love-emoji-3d-wallpaper,-download-free-amazing-high-resolution-backgrounds,-images-1636366955.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(0.8) blur(3px);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 8px;
+    border: 3px solid black;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px
+}
+
+.text {
+    margin: 20px 0;
+    font-size: 1.4em;
+}
+
+#exp {
+    margin: 20px 0;
+    font-size: 1.3em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+    #exp {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .text {
+        font-size: 0.9em;
+    }
+
+    #exp {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
